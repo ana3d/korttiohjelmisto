@@ -1,0 +1,10 @@
+CREATE TABLE kortit(
+	id INT NOT NULL AUTO_INCREMENT,
+	etunimi VARCHAR(255),
+	sukunimi VARCHAR(255),
+	osoite VARCHAR(255),
+	zip CHAR(5),
+	postitoimipaikka VARCHAR(255),
+	isDeleted BOOLEAN NOT NULL DEFAULT 0,
+	PRIMARY KEY (id)
+)ENGINE=InnoDB DEFAULT CHARSET=latin1;
